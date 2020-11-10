@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <h1>Hello word</h1>
+   <div class="jogo">
+       <form method="post">
+           <div class="jogo__input">
+               <label for="nome_jogador" class="jogo__label">Digite o seu nome:</label>
+               <input type="text" name="nome_jogador" id="nome_jogador" placeholder="David lisboa">
+           </div><br>
+
+           <div class="jogo__input">          
+            <input type="radio" name="escolha" id="escolha1" value="futurista" checked>
+            <label for="escolha1">Futurista</label>
+
+            <input type="radio" name="escolha" id="escolha2" value="medieval">
+            <label for="escolha2"">Era Medieval</label>
+            </div><br>
+
+            <div class="jogo__input">
+                <input type="submit" class="jogo__botao" valuer="Jogar!">
+            </div>
+
+       </form>
+   </div>
     
 </body>
 </html>
